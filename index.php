@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -18,7 +18,8 @@
       }
     ?>
     <form method="post" enctype="multipart/form-data">
-      <input type="file" name="arquivos[]" multiple >
+      <label for="arquivos">Selecione imagens</label><br><br>
+      <input type="file" id="arquivos" name="arquivos[]" multiple accept=".jpeg, .png, .jpg" ><br><br>
       <input type="submit" value="Enviar">
     </form>
   </body>
